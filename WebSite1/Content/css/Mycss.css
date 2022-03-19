@@ -1,0 +1,21 @@
+﻿.footer {
+    background-color:black;
+    color:white;
+    text-align:justify;
+
+}
+.footerTitles{
+    color:red;
+    background-color:red;
+
+}
+
+.aboutparents{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.marginparent{
+    padding-top:20px;
+    padding-bottom:20px;
+}

@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DUmaster.master.cs" Inherits="Content_DarshanUniversity" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/Mycss.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder id="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Content/images/Logo_DU.png" Height="115px" Width="300px"/>
+            </div>
+            <div class="col-md-9 text-right">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Darshan University</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                       <h2>Rajkot - Morbi Highway, Gujarat-363650, INDIA</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <asp:HyperLink runat="server" ID="hlHomeHeader" Text="Home" NavigateUrl="~/DUwebsite/Home.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlAbout" Text="About" NavigateUrl="~/DUwebsite/About.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlrogramme" Text="Programme" NavigateUrl="~/DUwebsite/Programme.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlConatct" Text="Contact" NavigateUrl="~/DUwebsite/ContactUs.aspx"></asp:HyperLink>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row footer">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>WHO WE ARE?</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top:10px;">
+                                <asp:Image ID="imgFooter" runat="server" ImageUrl="~/Content/images/du-logo-horizontal-white.png" Height="100px" Width="270px"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="padding:9px; margin:9px;">
+                                <p>Darshan University - having the foundation of its first Institution laid in 2009, and later on, established and consolidated under Gujarat Private Universities (Second Amendment) Act of 2021. It is one of the leading institutes within Saurashtra that offers Diploma, UG, and PG Courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------>
+                    <div class="col-md-3">
+                         <div class="row">
+                            <div class="col-md-12">
+                                <h6>FOR PARENTS/STUDENTS</h6>
+                            </div>
+                        </div>
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">Circulars</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">DParent App (Android)</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">DParent App (IOS)</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">GTU Website</div>
+                            <div class="col-md-2">></div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------>
+
+                    <div class="col-md-3">
+                         <div class="row">
+                            <div class="col-md-12">
+                                <h6>FOR PARENTS/STUDENTS</h6>
+                            </div>
+                        </div>
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">Circulars</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">DParent App (Android)</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">DParent App (IOS)</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">GTU Website</div>
+                            <div class="col-md-2">></div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------>
+
+                    <div class="col-md-3">
+                         <div class="row">
+                            <div class="col-md-12">
+                                <h6>FOR PARENTS/STUDENTS</h6>
+                            </div>
+                        </div>
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">Circulars</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">DParent App (Android)</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">DParent App (IOS)</div>
+                            <div class="col-md-2">></div>
+                        </div>
+
+                        <div class="row marginparent">
+                            <div class="col-md-10 align-content-lg-start">GTU Website</div>
+                            <div class="col-md-2">></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    </form>
+</body>
+</html>
