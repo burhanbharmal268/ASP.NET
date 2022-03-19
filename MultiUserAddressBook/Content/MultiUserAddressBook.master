@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MultiUserAddressBook.master.cs" Inherits="AddressBook_Content_AddressBook" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MultiUserAddressBook</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="container"> 
+            <div class="row">
+                <br />
+                <div class="col-md-4">
+                    <u><h1>Multi User Address Book</h1></u>
+                </div> 
+                <div class="col-md-8" style="text-align:right">
+                    <br />
+                    <asp:Label runat="server" ID="lblUserName"/><br />
+                    <asp:LinkButton runat="server" ID="lbtnLogOut" text="Log Out" CssClass="btn btn-danger" OnClick="lbtnLogOut_Click"></asp:LinkButton><br /><br />
+                    <asp:HyperLink ID="hlDefault" runat="server" NavigateUrl="/AdminPanel/Home">Home</asp:HyperLink>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlCountry" runat="server" NavigateUrl="/AdminPanel/Country/List">Country</asp:HyperLink>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlState" runat="server" NavigateUrl="/AdminPanel/State/List">State</asp:HyperLink>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlCity" runat="server" NavigateUrl="/AdminPanel/City/List">City</asp:HyperLink>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlContactCategory" runat="server" NavigateUrl="/AdminPanel/ContactCategory/List">Contact Category</asp:HyperLink>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlContact" runat="server" NavigateUrl="/AdminPanel/Contact/List">Contact</asp:HyperLink>
+                </div> 
+            </div>
+         </div>
+            <hr />
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-12">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+            <hr />
+        <div style=" text-align:center ;">
+            <div class="container"> 
+                <div class="row" >
+                    <div class="col-md-12">
+                        <br />
+                        Burhan Bharmal | 190540107010 | 190540107010@darshan.ac.in
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

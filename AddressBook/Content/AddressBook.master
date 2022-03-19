@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AddressBook.master.cs" Inherits="Content_AddressBook" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-12">
+                        <h2>AddressBook</h2><hr />
+                        <div>
+                        <asp:HyperLink runat="server" ID="hlCountry" Text="Country" NavigateUrl="~/AdminPanel/Country/CountryList.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlState" Text="State" NavigateUrl="~/AdminPanel/State/StateList.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlCity" Text="City" NavigateUrl="~/AdminPanel/City/CityList.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlConatctCategory" Text="ContactCategory" NavigateUrl="~/AdminPanel/ContactCategory/ContactCategoryList.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlContact" Text="Contact" NavigateUrl="~/AdminPanel/Contact/ContactList.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlContactPhotoPath" Text="ContactPhotoPath" NavigateUrl="~/AdminPanel/ContactPhoto/ContactPhotoList.aspx"></asp:HyperLink><%--&nbsp;&nbsp;|&nbsp;&nbsp;--%>
+                        <%--<asp:HyperLink runat="server" ID="hlCountryAddEdit" Text="CountryAddEdit" NavigateUrl="~/AdminPanel/Country/CountryAddEdit.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlStateAddEdit" Text="StateAddEdit" NavigateUrl="~/AdminPanel/State/StateAddEdit.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlCityAddEdit" Text="CityAddEdit" NavigateUrl="~/AdminPanel/City/CityAddEdit.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlContactCategoryAddEdit" Text="ContactCategoryAddEdit" NavigateUrl="~/AdminPanel/ContactCategory/ContactCategoryAddEdit.aspx"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="hlContactAddEdit" Text="ContactAddEdit" NavigateUrl="~/AdminPanel/Contact/ContactAddEdit.aspx"></asp:HyperLink>
+                        --%></div><hr/>
+                    </div>
+        </div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <hr />
+                Burhan Bharmal | 190540107010 | Email- 190540107010@darshan.ac.in
+            </div>
+        </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
